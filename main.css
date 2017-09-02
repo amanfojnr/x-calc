@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+
+body {
+    margin-right: auto;
+    font-family: 'Electrolize', sans-serif;
+}
+
+
+.main-box {
+    width: 260px;
+    height: 450px;
+    background-color: #1a1a1a;
+    color: #ececec;
+    box-shadow: 3px 5px 10px #a7a7a7;  
+}
+
+
+
+span:hover {
+    border-bottom: solid 2px #d42aff;
+}
+
+.screen {
+    height: 150px;
+    background-color: #d42aff;
+}
+
+#total {
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+#calculation {
+    font-size: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.keypad-box .numbersAndequalTo {
+    display: flex;
+    flex-flow : row;
+    font-size: 20px;
+    height: 265px;
+}
+
+
+.equalTo-box {
+    width: 100px;
+}
+
+#equal {
+    text-align: center;
+}
+
+.number-box span {
+    margin: 10px 5px 10px 20px;
+}
+
+.number-box .row {
+    margin: 40px 0;
+
+}
+
+.operators span {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.operators p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>x-calc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="amanfojnr">
+        <meta name="description" content="a calculator with basic functionalities">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    <!-- app-->
+    <div id="app" class="main-box">
+        <div class="row screen">
+        <p id="total">{{ total }}</p>
+        <p id="calculation">{{ calculation }}</p>
+        </div>
+      
+        <section class="keypad-box">
+            
+            <div class="row numbersAndequalTo">
+            <section class="number-box">
+                <div class="row">
+                    <button v-on:click="putIn('7')">7</button>
+                    <button v-on:click="putIn('8')">8</button>
+                    <button v-on:click="putIn('9')">9</button>
+                </div>
+                <div class="row">
+                    <button v-on:click="putIn('4')">4</button>
+                    <button v-on:click="putIn('5')">5</button>
+                    <button v-on:click="putIn('6')">6</button>
+                </div>
+                <div class="row">
+                    <button v-on:click="putIn('1')">1</button>
+                    <button v-on:click="putIn('2')">2</button>
+                    <button v-on:click="putIn('3')">3</button>
+                </div>
+                 <div class="row">
+                    <button v-on:click="putIn('.')">.</button>
+                    <button v-on:click="putIn('0')">0</button>
+                    <button v-on:click="clear">C</button>
+                </div>
+               
+            </section>
+             <section class="equalTo-box">
+                    <button v-on:click="calculate">=</button>
+                </section>
+            </div>
+            <div class="row operators">
+                <button v-on:click="putIn('+')">+</button>
+                <button v-on:click="putIn('/')">/</button>
+                <button v-on:click="putIn('*')">*</button>
+                <button v-on:click="putIn('-')">-</button>
+                
+            </div>   
+        </section>
+    </div>
+    <!-- load vue.js -->
+    <script src="js/vue.js"></script>
+
+    <!-- load app.js -->
+    <script src="js/app.js"></script>
+    </body>
+</html>
