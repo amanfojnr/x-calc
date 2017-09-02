@@ -15,18 +15,21 @@ body {
 }
 
 
-
+span {
+    text-align: center;
+}
 span:hover {
-    border-bottom: solid 2px #d42aff;
+    background : #d42aff;
 }
 
 .screen {
     height: 150px;
-    background-color: #d42aff;
+    background-color: #15a1ed;
+    max-width: 100%;
 }
 
 #total {
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 10px;
 }
 
@@ -52,22 +55,21 @@ span:hover {
     text-align: center;
 }
 
+
 .number-box span {
-    margin: 10px 5px 10px 20px;
+    padding: 10px;
 }
 
 .number-box .row {
-    margin: 40px 0;
+   margin: 20px;
 
 }
 
 .operators span {
     font-size: 20px;
-    margin: 0 20px;
 }
 
 .operators p {
     text-align: center;
-    margin: 0;
-    padding: 0;
+    padding: 10;
 }

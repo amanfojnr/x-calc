@@ -4,7 +4,7 @@ let app = new Vue({
     el : "#app",
     data: {
         total : 0,
-        calculation : "0",
+        calculation : "",
     },
     methods: {
 
